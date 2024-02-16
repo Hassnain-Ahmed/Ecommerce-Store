@@ -1,0 +1,183 @@
+#myprofile {
+  padding: 5rem 0;
+}
+
+#myprofile .row {
+  height: 550px;
+}
+
+#myprofile .row #col a {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+}
+#myprofile .row #col {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 0 5px;
+}
+
+#myprofile .row #col1 {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 0 5px;
+}
+
+#myprofile .row #col1 ul a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 450;
+}
+
+#myprofile .row #col1 ul a:hover {
+  color: #333;
+}
+
+#myprofile .row #col1 ul li {
+  list-style: none;
+}
+
+#myprofile .row #col1 ul a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 450;
+}
+
+#myprofile .row #col1 ul a:hover {
+  color: #333;
+}
+
+#myprofile .row div label {
+  width: 15%;
+  margin: 10px 0;
+}
+
+#myprofile .row div input {
+  width: 45%;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #555;
+  outline: 2px solid transparent;
+}
+
+#myprofile .row div input:focus {
+  outline: 2px solid #669999;
+  transition: 0.25s;
+}
+
+#myprofile .row div pas {
+  background-color: red;
+}
+
+/* #myprofile .row div button {
+  border: 1px solid #555;
+  transition: 0.25s;
+}
+
+#myprofile .row div button:hover {
+  background-color: #d49a6a;
+} */
+
+#myprofile-profile-wrap {
+  background-color: rgba(204, 204, 204, 0.4);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+#myprofile-profile-wrap img {
+  width: 10%;
+  border-radius: 100%;
+}
+
+/* #myprofile-profile-wrap:hover span
+{
+    cursor: pointer;
+    color: #347BFA;
+} */
+
+.shipping-wrapper {
+  display: none;
+}
+
+.order-wrapper {
+  display: none;
+}
+
+.order-wrapper div {
+  height: 445px;
+  overflow-y: auto;
+}
+
+.canceled-wrapper {
+  display: none;
+}
+
+.canceled-wrapper div {
+  height: 445px;
+  overflow-y: auto;
+}
+
+.reviews-wrapper {
+  display: none;
+}
+
+.reviews-wrapper div {
+  height: 445px;
+  overflow-y: auto;
+}
+
+.reviews-wrapper div table tr th:nth-child(2) {
+  width: 12%;
+}
+
+.reviews-wrapper div table tr th:nth-child(5) {
+  /* background-color: #226666; */
+  width: 40%;
+}
+
+#product-rating .f {
+  color: gold;
+}
+
+.wrapper-wrapper {
+  display: flex;
+  align-items: center;
+}
+.password-wrapper {
+  width: 45%;
+  background-color: #fff;
+  position: relative;
+  border-radius: 0.25rem;
+  border: 1px solid #555;
+  outline: 2px solid transparent;
+  margin: 4px;
+  padding: 0.1rem;
+}
+.password-wrapper input {
+  border: none !important;
+  outline: none !important;
+  height: 100%;
+  width: 95% !important;
+}
+.password-wrapper span {
+  color: #333;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.password-wrapper:focus-within {
+  outline: 2px solid #669999;
+  transition: 0.25s;
+}
+
+.material-symbols-rounded.active {
+  font-variation-settings: "wght" 300, "FILL" 1;
+}
+.material-symbols-rounded.stars {
+  color: gold !important;
+  margin: 0 -1px;
+}

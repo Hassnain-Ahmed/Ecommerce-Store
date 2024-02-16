@@ -1,0 +1,274 @@
+/* @import url("..//assets/bootstrap-icons/Bootstrap\ Icons.css"); */
+* {
+  scroll-behavior: smooth !important;
+}
+
+#nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+#nav .col-sm-6 ul {
+  display: inline;
+}
+
+#nav .col-sm-6 ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+#nav .col-sm-6 ul li::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background-color: #407f7f;
+  transition: 0.25s;
+}
+
+#nav .col-sm-6 ul li:hover::after {
+  width: 100%;
+}
+
+#nav .col-sm-6 ul li:hover ul {
+  display: block;
+}
+
+#nav .col-sm-6 ul li ul li a {
+  font-size: small;
+}
+#nav .col-sm-6 ul li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  padding: 0;
+}
+
+#nav .col-sm-6 ul li ul {
+  position: absolute;
+  display: none;
+  background-color: #eee;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 1;
+  padding: 0;
+}
+
+#nav .col-sm-6 ul li ul li {
+  display: list-item;
+  width: 100%;
+}
+#nav .col-sm-6 ul li ul li a {
+  width: 100%;
+  display: block;
+}
+#nav .col-sm-6 ul li ul li::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+#icons-bar {
+  position: relative;
+}
+
+#icon {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+#icon img {
+  width: 20px;
+  outline: 1px solid #669999;
+  border-radius: 100%;
+  outline-offset: 2px;
+}
+
+#nav-fa-icon {
+  font-size: 20px;
+  color: #555;
+}
+#icon a {
+  color: #555;
+  text-decoration: none;
+  /* font-style: italic; */
+  /* font-weight: bold; */
+}
+#icon span {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  color: #ccc;
+  top: -10px;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #333;
+}
+
+#profile_div {
+  position: absolute;
+  right: 0px;
+  display: none;
+}
+
+#profile_div ul {
+  all: unset;
+}
+
+#profile_div li {
+  list-style: none;
+}
+
+#profile_div a {
+  color: #555;
+  text-decoration: none;
+}
+
+#profile_div a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  /* margin: auto; */
+}
+.profile {
+  cursor: pointer;
+  user-select: none;
+}
+
+#profile_div-pointer .fp {
+  position: absolute;
+  top: 0px;
+  left: 43%;
+  transform: rotate(180deg) translate(0%, 0);
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+#profile_options {
+  margin-top: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 0.25rem;
+  text-align: left;
+  padding: 1rem 1rem 0.3rem 1rem;
+}
+
+.material-symbols-rounded {
+  float: left;
+  font-variation-settings: "FILL" 0;
+}
+
+.material-symbols-rounded-filled {
+  font-variation-settings: "FILL" 1 !important;
+}
+
+.red-color {
+  color: rgb(226, 56, 56);
+  transition: 0.25s;
+}
+
+.black-color:hover {
+  color: rgb(255, 3, 3);
+}
+
+.black-color {
+  color: #555;
+  transition: 0.25s;
+}
+
+.red-color:hover {
+  color: #333;
+}
+
+.outofstock {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  width: 100%;
+  height: 610px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.outofstock::before {
+  content: "OUT OF STOCK";
+  color: #f9f9f9;
+  font-size: larger;
+}
+
+.img-holder {
+  position: relative;
+}
+
+.outofstock-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.outofstock-item::before {
+  content: "OUT OF STOCK";
+  color: #f9f9f9;
+  font-size: larger;
+}
+
+/* loader */
+.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  width: 25px;
+  height: 25px;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  width: 25px;
+  height: 25px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

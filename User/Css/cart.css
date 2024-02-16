@@ -1,0 +1,158 @@
+#icon a[href="cart.php"]::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #669999;
+  margin: 2px 0;
+}
+
+#cart {
+  padding: 6rem 0;
+  min-height: 425px;
+}
+
+#c-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #669999;
+}
+
+#added_item input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+#added_item input[type="number"]::-webkit-inner-spin-button,
+#added_item input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+#price-bracket h5 {
+  display: inline-block;
+}
+
+/* #buynow-btn button {
+    border: 1px solid #226666;
+    padding: 0 1.5rem;
+    border-radius: .2rem;
+
+}
+
+#buynow-btn button:hover {
+    background-color: #4c9191;
+    transition: .25s;
+} */
+
+#cart .row {
+  margin: 15px 0;
+}
+
+#cart .row .col-2 {
+  padding: 1rem;
+}
+
+#cart .row .col-8 {
+  position: relative;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#remove-product {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  text-align: center;
+  /* background-color: red; */
+  padding: 0.2rem;
+}
+
+#remove-product a {
+  color: #888 !important;
+  padding: 0.35rem 1.8rem;
+  /* background-color: pink; */
+}
+
+/* #remove-product a:hover {
+    color: #333;
+} */
+
+#r-p-message {
+  background-color: #555;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #eee;
+  opacity: 0;
+  margin-top: -25px;
+}
+
+#r-p-message .ic {
+  position: absolute;
+  top: 10px;
+  left: 43%;
+  color: #444;
+}
+
+#remove-product:hover a {
+  color: #333;
+  transition: color 0.25s;
+}
+
+#remove-product:hover #r-p-message {
+  margin-top: 5px;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+#remove-product:hover #r-p-message .ic {
+  top: 20px;
+  transition: 0.5s;
+}
+
+#Quantity-inputs {
+  width: 45%;
+}
+
+#Quantity-inputs span {
+  float: right;
+  line-height: 32px;
+}
+
+#added_item #Quantity-inputs input[type="number"] {
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid #555;
+  outline: 1px solid transparent;
+  text-align: center;
+}
+
+#added_item #Quantity-inputs input[type="number"]:focus {
+  outline: 1px solid #669999;
+  transition: 0.25s;
+}
+
+/* #added_item #Quantity-inputs button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: .25rem;
+    border: 1px solid #669999;
+}
+
+#added_item #Quantity-inputs button:hover {
+    background-color: #669999;
+    transition: 0.25s;
+} */
+
+#added_item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}

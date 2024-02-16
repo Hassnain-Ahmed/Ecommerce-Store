@@ -1,0 +1,91 @@
+#reviews .wrapper {
+  border-radius: 0.5rem;
+  background: #eee;
+  box-shadow: 10px 10px 20px #bebebe, -20px -20px 20px #ffffff;
+
+  padding: 1rem;
+  color: #555 !important;
+  cursor: default;
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+#reviews .wrapper h5 {
+  position: sticky;
+}
+
+#reviews .wrapper .table {
+  color: #555 !important;
+}
+
+#reviews .wrapper a {
+  color: #555;
+  text-decoration: none;
+  transition: 0.25s;
+  font-weight: 500;
+}
+
+#reviews .wrapper a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+#reviews .table tr th:nth-child(2) {
+  width: 80px !important;
+}
+
+#reviews .show-reviews-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  display: none;
+}
+
+#reviews .show-reviews {
+  position: relative;
+  background-color: rgb(204, 204, 204, 0.5);
+  border-radius: 0.25rem;
+  backdrop-filter: blur(5px);
+
+  border: 1px solid #777;
+  width: 60%;
+
+  padding: 0rem;
+  height: 0px;
+
+  /* padding: 1rem;
+  height: 500px; */
+}
+
+#reviews .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#reviews .material-symbols-rounded {
+  font-variation-settings: "wght" 300, "FILL" 0;
+  user-select: none;
+}
+
+#reviews .material-symbols-rounded.stars {
+  color: gold !important;
+  margin: 0 -3px;
+  font-size: large;
+}
+
+#reviews .material-symbols-rounded.active {
+  font-variation-settings: "wght" 300, "FILL" 1;
+}
+
+.bg-color-user {
+  background-color: #ccc;
+}

@@ -1,0 +1,257 @@
+.color-primary-0 {
+    color: #226666
+}
+
+/* Main Primary color */
+.color-primary-1 {
+    color: #669999
+}
+
+.color-primary-2 {
+    color: #407F7F
+}
+
+.color-primary-3 {
+    color: #0D4D4D
+}
+
+.color-primary-4 {
+    color: #003333
+}
+
+.color-complement-0 {
+    color: #AA6C39
+}
+
+/* Main Complement color */
+.color-complement-1 {
+    color: #FFD1AA
+}
+
+.color-complement-2 {
+    color: #D49A6A
+}
+
+.color-complement-3 {
+    color: #804515
+}
+
+.color-complement-4 {
+    color: #552700
+}
+
+
+
+/* As RGBa codes */
+
+.rgba-primary-0 {
+    background-color: rgba(34, 102, 102, 1)
+}
+
+/* Main Primary color */
+.rgba-primary-1 {
+    background-color: rgba(102, 153, 153, 1);
+    border: none;
+    color: #333;
+    border-radius: 2.5px;
+}
+
+.rgba-primary-1:hover {
+    transition: .25s;
+    color: #111;
+    background-color: #407F7F;
+}
+
+.rgba-primary-2 {
+    background-color: rgba(64, 127, 127, 1)
+}
+
+.rgba-primary-3 {
+    background-color: rgba(13, 77, 77, 1)
+}
+
+.rgba-primary-4 {
+    background-color: rgba(0, 51, 51, 1)
+}
+
+.rgba-complement-0 {
+    background-color: rgba(170, 108, 57, 1)
+}
+
+/* Main Complement color */
+.rgba-complement-1 {
+    background-color: rgba(255, 209, 170, 1)
+}
+
+.rgba-complement-2 {
+    background-color: rgba(212, 154, 106, 1);
+    border: none;
+    color: #333;
+    border-radius: 2.5px;
+}
+
+.rgba-complement-2:hover {
+    border: none;
+    border-radius: 2.5px;
+    color: #333;
+    background-color: #b88053;
+}
+
+.rgba-complement-3 {
+    background-color: rgba(128, 69, 21, 1)
+}
+
+.rgba-complement-4 {
+    background-color: rgba(85, 39, 0, 1)
+}
+
+
+
+#add_products-rm-btn {
+    margin: 5rem 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    padding: .1rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    outline: 2px solid transparent;
+    background-color: rgba(102, 153, 153, 0.8);
+}
+
+#add_products-rm-btn:hover {
+    border: 1px solid #669999;
+    outline: 2px solid #407F7F;
+    background-color: rgba(102, 153, 153, 1);
+    transition: .5s;
+}
+
+
+#add_products div #product-info input:focus {
+    outline: 1px solid #407F7F;
+}
+
+#add_products div #product-info input {
+    width: 70%;
+    border-radius: .15rem;
+    border: 1px solid #333;
+}
+
+#add_products div #product-info label {
+    margin: .5rem 0;
+    width: 25%;
+}
+
+#add_products div h4 {
+    margin: 1rem 0 0 0;
+}
+
+/* #add_products div p::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #407F7F;
+    margin: .25rem 0;
+} */
+
+
+
+
+
+
+
+#add_products .row {
+    margin: 15px 0;
+    box-shadow: 1px 5px 15px #ccc;
+    padding: 1rem .5rem;
+    border-radius: .25rem;
+}
+
+#add_products .row #search-bar-wrapper {
+    border: 1px solid #999;
+    border-radius: .25rem;
+    position: relative;
+    transition: .25s;
+}
+
+/* .db_table * {
+    background-color: rgba(255, 0, 0, 0.548);
+} */
+
+.db_table_wrapper {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #ebebeb;
+    z-index: 11;
+    border-radius: .25rem;
+    padding: .25rem;
+    overflow-y: auto;
+    max-height: 400px;
+
+    display: none;
+}
+
+.db_table_wrapper a {
+    color: #555;
+    text-decoration: none;
+}
+
+.db_table_wrapper a::after {
+    content: '';
+    background-color: #ccc;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+
+}
+
+.db_table {
+    width: 100%;
+    margin: 5px 0;
+    padding: .25rem;
+}
+
+.db_table:hover {
+    background-color: #f3f3f3;
+}
+
+#add_products .row .f {
+    color: #444;
+}
+
+#add_products .row #search-bar-wrapper input {
+    all: unset;
+    padding: .5rem 0;
+    width: 95%;
+}
+
+#add_products .row .col {
+    all: unset;
+    /* border: 1px solid #333; */
+}
+
+#add_products .row .col select {
+    height: 100%;
+    border: 1px solid #999;
+    outline: 2px solid transparent;
+    border-radius: .25rem;
+    margin: 0 .2rem;
+    color: #555;
+    padding: .0rem 1rem !important;
+}
+
+#add_products .row .col select:focus {
+    outline: 2px solid #407F7F;
+    transition: .25s;
+}
+
+
+
+
+.col-3 img[src="assets//img/undraw_image_upload_re_w7pm.svg"] {
+    filter: saturate(0);
+}

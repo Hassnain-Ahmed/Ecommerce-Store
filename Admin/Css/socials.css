@@ -1,0 +1,94 @@
+#socials_home
+{
+    width: 98%;
+    background-color: #f1f1f1;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#socials_home .row .col-3
+{
+    border-radius: .5rem;
+    margin: 5px 0px 5px 1rem;
+    padding: .7rem;
+
+}
+#socials_home .row .col-3 a
+{
+    color: #f9f9f9;
+    text-decoration: none;
+
+}
+#socials_home .row .col-3 .bi
+{
+    position: absolute;
+    bottom: -.5rem;
+    right: .1rem;
+    font-size: 3rem;
+    color: #eee;
+}
+#facebook-card
+{
+    background-image: linear-gradient(130deg, rgb(66, 103, 178),rgb(41, 65, 112));
+    position: relative;
+}
+#instagram-card
+{
+    background-image: linear-gradient(130deg,#405DE6,#5B51D8,#833AB4,#C13584,#fd1d1da4,#F56040,#FCAF45,#FFDC80);
+    position: relative;
+}
+#twitter-card
+{
+    background-image: linear-gradient(130deg,#1DA1F2,#1879b6);
+    position: relative;
+
+}
+#linkedin-card
+{
+    background-image: linear-gradient(130deg,#0A66C2,#094b8d);
+    position: relative;
+}
+#tiktok-card
+{
+    background-image: linear-gradient(130deg,#ff0050 25%,#00f2ea,#000000 100%);
+    position: relative;
+
+}
+
+
+
+
+
+
+
+#socials_home label
+{
+    width: 6%;
+    margin: .5rem 0;
+}
+#socials_home input
+{
+    width: 30%;
+    padding: .1rem .5rem;
+    border-radius: .2rem;
+    border: 1px solid #999;
+    outline: 2px solid transparent;
+}
+#socials_home input:focus
+{
+    outline: 2px solid #669999;
+    transition: .25s;
+}
+#socials_home button
+{
+    padding: .1rem 2rem;
+    border: 1px solid #555;
+    border-radius: .25rem;
+}
+#socials_home button:hover
+{
+    background-color: #669999;
+    color: #f1f1f1;
+    border: 1px solid #407F7F;
+    transition: .25s;
+}

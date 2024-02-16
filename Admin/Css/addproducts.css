@@ -1,0 +1,72 @@
+#add_products div button {
+
+    padding: .1rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid #333;
+    outline: 2px solid transparent;
+
+}
+
+#btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#add_products div button:hover {
+    border: 1px solid #669999;
+    outline: 2px solid #407F7F;
+
+    transition: outline .5s;
+}
+
+#add_products div input:focus {
+    outline: 1px solid #407F7F;
+}
+
+#add_products div input {
+    width: 50%;
+    border-radius: .15rem;
+    border: 1px solid #333;
+}
+
+#add_products div label {
+    margin: .5rem 0;
+    width: 25%;
+}
+
+#add_products div h4 {
+    margin: 1rem 0 0 0;
+}
+
+
+
+
+
+
+#image_gallary {
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    #img-box {
+        flex: 0 0 auto;
+    }
+}
+
+#image_gallary img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: .25rem;
+}
+
+#img-box {
+    margin: 10px 5px;
+}
+
+#img-box p {
+    font-size: small;
+}

@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.bg {
+  height: 100vh;
+  animation: bg 1s infinite;
+  background-color: #eee;
+  display: flex;
+}
+
+@keyframes bg {
+  from {
+  }
+}
+
+.login-form {
+  padding: 1rem;
+  width: 600px;
+  border-radius: 10px;
+  background: rgb(224, 224, 224, 0.9);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 10%;
+  z-index: 0;
+  display: block;
+}
+
+.login-form .heading p::after {
+  content: "";
+  background-color: #b88053;
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin: auto;
+}
+
+.login-form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.login-form .inputs .input-wrapper {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+.login-form .inputs .input-wrapper:focus-within {
+  border: 2px solid #999;
+}
+
+.login-form .inputs input {
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.login-form .inputs button {
+  margin: -0.2rem auto;
+  width: 80%;
+  padding: 0.25rem 0;
+  border-radius: 0.25rem;
+}
+
+.login-form .inputs p {
+  margin: 0 auto;
+}
+
+.login-form .inputs p::before {
+  content: "";
+  background-color: #669999;
+  width: 46%;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  margin-top: 7px;
+}
+
+.login-form .inputs p::after {
+  content: "";
+  background-color: #669999;
+  width: 46%;
+  height: 2px;
+  position: absolute;
+  right: 0px;
+  margin-top: 7px;
+}
+
+.login-form .footer {
+  margin-top: 10px;
+  padding: 1rem 0;
+}
+
+.login-form .footer p {
+  position: relative;
+}
+
+.login-form .footer span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-form {
+  padding: 1rem;
+  width: 600px;
+  border-radius: 10px;
+  background: rgb(224, 224, 224, 0.9);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 5%;
+  z-index: 11;
+  display: none;
+}
+
+.signup-form .heading p::after {
+  content: "";
+  background-color: #b88053;
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin: auto;
+}
+
+.signup-form .inputs label {
+  margin: 1.5rem 0 0 0;
+}
+
+.signup-form .inputs div {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.signup-form .inputs div:focus-within {
+  border: 2px solid #999;
+}
+
+.signup-form .inputs div label {
+  position: absolute;
+  top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+.signup-form .inputs input {
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.signup-form .footer button {
+  margin: 0rem auto 0rem auto;
+  width: 80%;
+  padding: 0.25rem 0;
+  border-radius: 0.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-form .footer button::before {
+  content: "";
+  background: rgba(13, 77, 77, 0.5);
+  width: 100%;
+  height: 110%;
+  display: block;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  transition: 0.25s;
+}
+
+.signup-form .footer button:hover::before {
+  left: 0;
+}
+
+.signup-form .footer button:nth-child(1):after {
+  content: "Sign Up";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+}
+
+.signup-form .footer p::before {
+  content: "";
+  background-color: #669999;
+  width: 46%;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  margin-top: 7px;
+}
+
+.signup-form .footer p::after {
+  content: "";
+  background-color: #669999;
+  width: 46%;
+  height: 2px;
+  position: absolute;
+  right: 0px;
+  margin-top: 7px;
+}
+
+.signup-form .footer {
+  margin-top: 10px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.signup-form .footer p {
+  margin-top: 0.5rem;
+}
+
+.signup-form .footer span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-msg {
+  width: auto;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border-radius: 0.5rem;
+  left: 50%;
+  top: 51.5%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.password-msg ul {
+  margin: 0;
+  padding: 0 1rem;
+  color: #555;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.msg {
+  position: absolute;
+  width: 20%;
+  top: -100%;
+  margin-top: 20px;
+  background-color: #669999;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  z-index: 999;
+}
+/* loader */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  width: 25px;
+  height: 25px;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: transparent;
+  width: 25px;
+  height: 25px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

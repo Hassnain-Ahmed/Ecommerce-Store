@@ -1,0 +1,131 @@
+#icon a[href="search.php"]::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #669999;
+  margin: 2px 0;
+}
+
+#search {
+  padding: 5.5rem 0;
+}
+#search #search-bar-wrapper {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid #555;
+  outline: 2px solid transparent;
+  padding: 0.2rem;
+  transition: 0.25s;
+}
+#search .col-10 input {
+  width: 97%;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  outline: 2px solid transparent;
+}
+#search .col-10 button {
+  all: unset;
+}
+
+#category {
+  /* padding: 7rem 0; */
+  cursor: default;
+}
+#category h5::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #669999;
+  margin: 5px 0;
+}
+
+#category_item img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  filter: saturate(0);
+}
+
+#category a {
+  color: #333;
+}
+
+#category_item {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.75rem;
+}
+
+#category_item #category_item_text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(1px);
+  background-color: rgba(212, 207, 207, 0.5);
+  border-radius: 0.25rem;
+}
+
+#category_item #category_item_text h3 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+}
+
+#category_item:hover #category_item_text {
+  backdrop-filter: blur(5px);
+  transition: 0.25s;
+}
+
+#category_item:hover img {
+  filter: saturate(1);
+}
+
+.db_searched_data {
+  margin-top: 20px;
+  background-image: url(../../Admin/assets/img/Colored\ Shapes.svg);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  height: 0px;
+  max-height: 500px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.db_searched_data a {
+  text-decoration: none;
+}
+
+.db_searched_data a .row:hover {
+  background-color: rgba(238, 238, 238, 0.5);
+  transition: 0.25s;
+}
+
+.db_searched_data a .row {
+  color: #333;
+  text-decoration: none;
+  background-color: rgba(238, 238, 238, 0.3);
+  backdrop-filter: blur(1px);
+  margin: 5px 0 !important;
+}
+
+.db_searched_data .row img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  scale: 0.9;
+}
+
+.db_searched_data {
+  margin-top: 5px;
+}

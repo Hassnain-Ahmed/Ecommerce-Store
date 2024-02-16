@@ -1,0 +1,223 @@
+html {
+  overflow-y: hidden;
+}
+#myprofile .row {
+  height: 450px;
+}
+
+#myprofile .row #col {
+  background-color: #eee;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 1rem;
+}
+
+#myprofile .row #col1 {
+  background-color: #ccc;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding: 1rem;
+}
+
+#myprofile .row #col1 ul a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 450;
+}
+
+#myprofile .row #col1 ul a:hover {
+  color: #333;
+}
+#myprofile .row #col1 ul * {
+  transition: 0.25s;
+}
+
+#myprofile .row #col1 ul li {
+  list-style: none;
+  margin: 5px 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(214, 214, 214);
+}
+
+#myprofile .row #col1 ul li span {
+  float: right;
+  background-color: #eee;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: small;
+  margin-right: 10px;
+}
+
+#myprofile .row #col1 ul a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 450;
+}
+
+#myprofile .row #col1 ul a:hover {
+  color: #333;
+}
+
+#myprofile .row div label {
+  width: 15%;
+  margin: 10px 0;
+}
+
+/* #myprofile .row div input {
+  width: 45%;
+  border-radius: 0.25rem;
+  border: 1px solid #555;
+  outline: 2px solid transparent;
+}
+
+#myprofile .row div input:focus {
+  outline: 2px solid #669999;
+  transition: 0.25s;
+} */
+
+#myprofile .row div pas {
+  background-color: red;
+}
+
+#myprofile .row div button {
+  border: 1px solid #555;
+  transition: 0.25s;
+}
+
+#myprofile .row div button:hover {
+  background-color: #d49a6a;
+}
+
+#myprofile-profile-wrap {
+  background-color: rgba(204, 204, 204, 0.4);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+#myprofile-profile-wrap img {
+  width: 10%;
+  border-radius: 100%;
+}
+
+#myprofile-profile-wrap:hover span {
+  cursor: pointer;
+  color: #347bfa;
+}
+
+.shipped-wrapper {
+  display: none;
+}
+
+.canceled-wrapper {
+  display: none;
+}
+
+#profile-wrapper-title {
+  position: relative;
+}
+
+.profile-search-wrapper {
+  position: absolute;
+  width: auto;
+  /* border: 1px solid red; */
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  width: 30%;
+  border-radius: 0.25rem;
+  padding: 0 0.25rem 0 0;
+}
+.profile-search-wrapper input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+.loader {
+  opacity: 0;
+}
+
+#table-wrapper {
+  width: 100%;
+  height: 550px !important;
+  overflow-y: auto !important;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper table a {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#msg {
+  position: absolute;
+  top: 10%;
+  right: -100%;
+  background-color: #669999;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.select-status {
+  all: unset;
+  border: 1px solid transparent;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.viewby {
+  width: 370px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.viewby label {
+  width: 40% !important;
+}
+.viewby select {
+  width: 55%;
+}
+
+.print-wrapper {
+  background-color: #ccc;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  padding: 0.5rem;
+}
+.print button {
+  float: right;
+}
+
+.elements {
+  position: absolute;
+  width: 80%;
+  padding: 0.5rem;
+}
+
+/* .print-wrap {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+} */
