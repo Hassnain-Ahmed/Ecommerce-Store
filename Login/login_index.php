@@ -4,7 +4,7 @@ if (isset($_POST['login'])) {
 }
 function loginUser($user, $pass)
 {
-    if ($user === "admin77" && $pass === "Hassnain990") {
+    if ($user === "admin77" && $pass === "123") {
         session_start();
         $_SESSION['admin'] = "admin";
         header("Location: /Ecommerce2/admin/admin.php");
