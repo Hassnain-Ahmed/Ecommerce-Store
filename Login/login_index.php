@@ -7,10 +7,10 @@ function loginUser($user, $pass)
     if ($user === "admin77" && $pass === "123") {
         session_start();
         $_SESSION['admin'] = "admin";
-        header("Location: /Ecommerce2/admin/admin.php");
+        header("Location: /Ecommerce/admin/admin.php");
 
     } else {
-        include("../DB-Con/db.con.php");
+        include ("../DB-Con/db.con.php");
         $query = mysqli_query($con, "SELECT u_id, u_username , u_password from user where u_username = '" . $user . "' and u_password = '" . $pass . "'");
 
         if (mysqli_num_rows($query) == 1) {
@@ -35,7 +35,7 @@ if (isset($_POST['create_account'])) {
 
 function insertUser($u_name, $u_email, $u_phone, $u_username, $u_password)
 {
-    include("../DB-Con/db.con.php");
+    include ("../DB-Con/db.con.php");
     $insertQuery = mysqli_query($con, "INSERT into user(u_name, u_email, u_phone, u_username, u_password) values ('$u_name' ,  '$u_email', '$u_phone' , '$u_username' , '$u_password')");
     if ($insertQuery) {
         return $msg = "$u_name your Account has been created Successfully";

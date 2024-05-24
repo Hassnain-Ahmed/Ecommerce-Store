@@ -1,9 +1,9 @@
 <?php
-include_once("usernavbar.php");
+include_once ("usernavbar.php");
 if (!isset($_SESSION['user_id'])) {
     $signinmsg = "<h6><a href='../login/index.php?signin=1'>Sign in</a> or <a href='../login/index.php?signup=1'>Sign up</a> to add Items to the Cart</h6>";
 } else {
-    include("../DB-Con/db.con.php");
+    include ("../DB-Con/db.con.php");
     $query = mysqli_query($con, "SELECT * from add_products join category on add_products.cty_id = category.cty_id right join cart on cart.ap_id = add_products.ap_id where u_id = '" . $_SESSION['user_id'] . "'");
     if (mysqli_num_rows($query) < 1) {
         $signinmsg = "<h6>No items in the cart <a href='home.php'>Browse Items</a> to buy</h6>";
@@ -119,5 +119,5 @@ if (!isset($_SESSION['user_id'])) {
 
 
 <?php
-include("userfooter.php");
+include ("userfooter.php");
 ?>
