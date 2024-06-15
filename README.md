@@ -94,46 +94,22 @@ Follow these steps to set up the eCommerce Store on your local machine.
 2. **Move the project to your web server directory**:
    Move the project files to your web server's root directory (e.g., `htdocs` for XAMPP, `www` for WAMP, or `public_html` for a live server).
 
-3. **Create a MySQL database**:
-   Log in to your MySQL server and create a new database:
-   ```sql
-   CREATE DATABASE ecommerce_db;
-   ```
-
 4. **Import the database**:
    Import the provided SQL file (`ecommerce_db.sql`) located in the `DB` folder into your newly created database:
    ```bash
    mysql -u yourusername -p ecommerce_db < /path/to/DB/ecommerce_db.sql
    ```
-
-5. **Configure the database connection**:
-   Update the `db-conn/config.php` file with your database credentials:
-   ```php
-   <?php
-   $servername = "localhost";
-   $username = "yourusername";
-   $password = "yourpassword";
-   $dbname = "ecommerce_db";
-
-   // Create connection
-   $conn = new mysqli($servername, $username, $password, $dbname);
-
-   // Check connection
-   if ($conn->connect_error) {
-       die("Connection failed: " . $conn->connect_error);
-   }
-   ?>
-   ```
-
-6. **Start the web server**:
+   
+5. **Start the web server**:
    Ensure your web server and MySQL server are running.
 
-7. **Access the application**:
+6. **Access the application**:
    Open your web browser and go to `http://localhost/ecommerce-store/user/index.php` to access the user interface or `http://localhost/ecommerce-store/admin/dashboard.php` for the admin dashboard.
 
 ## Usage
 
 - **Admin Dashboard**: Log in as an admin to manage products, orders, and users.
+- *Credentials*: `username: admin77` and `password:123`
 - **User Interface**: Register, log in, browse products, add items to cart, and complete orders.
 
 ## License
