@@ -109,7 +109,7 @@ Follow these steps to set up the eCommerce Store on your local machine.
 ## Usage
 
 - **Admin Dashboard**: Log in as an admin to manage products, orders, and users.
-  - - *Credentials*: `username: admin77` and `password:123`
+  - *Credentials*: `username: admin77` and `password:123`
 - **User Interface**: Register, log in, browse products, add items to cart, and complete orders.
 
 ## License
